@@ -1,0 +1,99 @@
+<html>  
+<head>
+	<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="application.css">
+</head>
+	<body class="co">
+		<nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary navbar-custom" data-bs-theme="dark">
+        <div class="container-fluid">
+			
+					<a class="navbar-brand nav-logo" href="#"><img src="logolo.jpg" alt="logo" class="logo-image"></a>
+					
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+			<center>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="nav navbar-nav navbar-center">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        
+						<a class="nav-link active" href="events.html">Event</a>
+                    </li>
+					
+					<li class="nav-item">
+                        <a class="nav-link active" href="home.html#About Us">About Us</a>
+                    </li>
+					<li class="nav-item">
+                        <a class="nav-link active" href="home.html#Social Media">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+			</center>
+        </div>
+    </nav>
+	
+		<form action="appdb.php" method="POST">
+		<div class="text">
+		<div class="image">
+		<div class="text">
+		<h3> <b>Event Registration Form</b> ( <font color="yellow">*</font> : Required Section)</h3>
+			<label><font size="5"><pre><b>Name:<font color="yellow">*</font></b></pre><input type="text" size="35" maxlength="75" minlength="5" required name="name" autofocus/> </label>
+			<br><label><pre><b>Phone Number:<font color="yellow">*</font></b></pre><input type="text" size="35" maxlength="75" minlength="10" required name="phonenum"/></label>
+			<br><label><pre><b>E-mail:<font color="yellow">*</font></b></pre><input type="text" size="35" maxlength="75" minlength="5" required name="email"/></label>
+			<br><label><pre><b>Age:<font color="yellow">*</font></b></pre><input type="number" size="10" maxlength="25" name="age"/></label>
+			<br><pre><b>Gender:<font color="yellow">*</font></b></pre>
+				<pre><input type="radio" class="radio" name="gender" value="m" />Male<nobr>
+				<input type="radio" class="radio" name="gender"  value="f"/>Female</label>
+				<input type="radio" class="radio" name="gender"  value="o"/>Others</pre></label></nobr>
+			<label><pre><b>Events:<font color="yellow">*</font></b></pre></label>
+			<br><select name="eventname">
+				<option selected disabled hidden>Select a category</option>
+				<optgroup label="Comedy"> 
+					<option value="1"> Stand-up Comedy Live	(Rate = 500/-)</option>
+					<option value="2"> Late Night Comedy		(Rate = 1000/-)</option>
+				</optgroup>
+				<optgroup label="Concert">
+					<option value="3"> Legends of Rock	(Rate = 750/-)</option>
+					<option value="4"> Bollywood Tamasha	(Rate = 900/-)</option>
+				</optgroup>
+				<optgroup label="Dance">
+					<option value="5"> Friday Night Socials	(Rate = 800/-)</option>
+					<option value="6"> Spandan	(Rate = 750/-)</option>
+				</optgroup>
+				<optgroup label="Drama">
+					<option value="7"> The Conference of The Birds	(Rate = 500/-)</option>
+					<option value="8"> The Final Twist	(Rate = 450/-)</option>
+				</optgroup>
+				<optgroup label="Exhibition">
+					<option value="9"> Indian Artisian Bazaar	(Rate = 350/-)</option>
+					<option value="10"> Hi Life Exhibition	(Rate = 400/-)</option>
+				</optgroup>
+			</select>
+			<br><label><pre><b>No of tickets:<font color="yellow">*</font></b></pre>
+			<input type="number" id="numTickets" size="10" maxlength="25" name="tickets"/></label>
+			<br>
+			<p id="totalCost">Total Cost: ₹0</p>
+			<div class="buttons">
+			<button class="btn btn-outline-success" type="submit" name="submit" value="Submit">Submit</button>
+			<br><br>
+			</div>
+		</div>	
+		</div>
+		</div>
+		
+		</form>
+		<footer>
+        <div class="container">
+            <p>&copy; 2023 Lesuire Occasions. All rights reserved.</p>
+        </div>
+    </footer>
+	<script src="application.js"></script>
+	</body>
+</html>
